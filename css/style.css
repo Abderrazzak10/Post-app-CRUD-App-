@@ -11,3 +11,32 @@ body {
     color: #333;
     line-height: 1.6;
 }
+
+
+
+/* Header styles */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #05609c; 
+}
+
+header nav{
+    width: 80%;
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.add_post, .home{
+    color: white;
+}
+
+

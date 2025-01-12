@@ -1,0 +1,13 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a default font for the entire application */
+body {
+    font-family: 'Rubik', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}

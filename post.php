@@ -1,3 +1,8 @@
+<?php
+// Include config file
+    require_once "config/db.php";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,9 +1,11 @@
 <?php
 
+// Database configuration
+require_once "config/config.php";
 
 try {
     // Attempt to connect to MySQL database using PDO
-    $pdo = new PDO("mysql:host=" DB_HOST ";dbname=" . DB_NAME, DB_USERNAME, DB_PASSWORD);
+    $pdo = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USERNAME, DB_PASSWORD);
     // Set the PDO error mode to exception
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {

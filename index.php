@@ -5,6 +5,7 @@
     $query = "SELECT * FROM posts ORDER BY created_at DESC";
     $stmt = $pdo->prepare($query);
     $stmt->execute();
+    
     $posts = $stmt->fetchAll();
 
 ?>
@@ -28,10 +29,10 @@
         foreach ($posts as $post) {
     ?>
             <div class="container">
-                <h3><?php echo$post['title']  ?></h3>
+                <h3><?php echo $post['title']  ?></h3>
                 <p><?php echo substr($post['body'],0,25) ?>.....</p>
                 <small>Created by <?php echo $post['author'] ?> on <?php echo $post['created_at'] ?></small>
-                <a href="post.html?id=<?php echo $post['id'] ?>">Read More</a>
+                <a href="post.php?id=<?php echo $post['id'] ?>">Read More</a>
             </div>
     <?php
     }

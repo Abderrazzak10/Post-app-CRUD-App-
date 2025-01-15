@@ -2,6 +2,13 @@
 // Include config file
     require_once "config/db.php";
 
+    $id = $_GET['id'];
+
+    $stmt = $pdo->prepare("SELECT * FROM posts WHERE id = '$id' ");
+    $stmt->execute();
+
+    $post = $stmt->fetch(PDO::FETCH_ASSOC);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,10 +25,11 @@
             <a href="addpost.php" class="add_post">Add Post</a>
         </nav>
     </header>
+    
     <div class="container">
-        <h3>Title1</h3>
-        <p>Descreption</p>
-        <small>Created by ... on ...</small>
+        <h3><?php echo $post['title']  ?></h3>
+        <p><?php echo $post['body'] ?></p>
+        <small>Created by <?php echo $post['author'] ?> on <?php echo $post['created_at'] ?></small>
     </div>
 </body>
 </html>

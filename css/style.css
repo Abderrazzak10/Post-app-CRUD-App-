@@ -54,3 +54,11 @@ h3{
     font-weight: 300;
 }
 
+form{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+

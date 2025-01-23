@@ -20,8 +20,8 @@
 <body>
     <header>
         <nav>
-            <a href="index.html" class="home" >Home</a>
-            <a href="addpost.html"  class="add_post" >Add Post</a>
+            <a href="index.php" class="home" >Home</a>
+            <a href="addpost.php"  class="add_post" >Add Post</a>
         </nav>
     </header>
     <?php

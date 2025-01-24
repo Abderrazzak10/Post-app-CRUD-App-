@@ -1,5 +1,5 @@
-/* Reset some default browser styles */
-* {
+/* Global Rules */
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,10 +12,8 @@ body {
     line-height: 1.6;
 }
 
-
-
-/* Header styles */
-header {
+/* header */
+header{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -23,16 +21,22 @@ header {
     background-color: #05609c; 
 }
 
-header nav{
+nav{
     width: 80%;
-    margin: 25px auto;
+    display: flex;
+    margin: 25px auto; 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-a {
+a{
     text-decoration: none;
+    color: #05609c; 
+}
+
+a:hover{
+    border-bottom: 1px solid #05609c;
 }
 
 .add_post, .home{
@@ -42,7 +46,7 @@ a {
 .add_post:hover, .home:hover{
     border-bottom: 2px solid white;
 }
-
+ 
 /* main */
 .container{
     width: 80%;
@@ -61,4 +65,19 @@ form{
     flex-direction: column;
 }
 
+form input{
+    height: 60px;
+    margin: 15px 0;
+}
+
+textarea{
+    margin: 15px 0;
+}
+
+input[type='submit']{
+    background-color: #982734;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
 

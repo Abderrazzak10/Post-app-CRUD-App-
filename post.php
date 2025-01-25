@@ -31,6 +31,7 @@
         <p><?php echo $post['body'] ?></p>
         <small>Created by <?php echo $post['author'] ?> on <?php echo $post['created_at'] ?></small>
         <a href="editpost.php?id=<?php echo $post['id'] ?>">Edit post</a><br><br>
+        <a href="deletepost.php?id=<?php echo $post['id'] ?>">Delete post</a>
     </div>
 </body>
 </html>
